@@ -1,0 +1,19 @@
+name: general_repository
+description: A general API repository to handle API responses
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  ssl_pinning_plugin: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^2.1.2
+  mocktail: ^0.3.0

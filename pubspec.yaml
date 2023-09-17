@@ -1,0 +1,66 @@
+name: drive_share
+description: Drive share is vehicle renting app.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.3.2
+  flutter_launcher_icons: ^0.13.1
+  flutter_bloc: ^8.1.3
+  cupertino_icons: ^1.0.6
+  easy_localization: ^3.0.3
+  equatable: ^2.0.5
+  flutter_svg: ^2.0.7
+  injectable: ^2.3.0
+  get_it: ^7.6.4
+  google_fonts: ^6.0.0
+  go_router: ^10.1.2
+
+  general_repository:
+    path: packages/general_repository
+  locale:
+    path: packages/locale
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3
+  injectable_generator:
+  build_runner:
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+
+flutter_native_splash:
+  color: "#FFAA05"
+  image: assets/icons/app_icon.png
+  color_dark: "#FFAA05"
+  android_gravity: center_vertical
+  ios_content_mode: center
+  fullscreen: true
+
+  android_12:
+    color: "#FFAA05"
+    image: assets/icons/app_icon.png
+    icon_background_color: "#FFAA05"
+    image_dark: assets/icons/app_icon.png
+    icon_background_color_dark: "#FFAA05"
+    fullscreen: true
+
+  web: false
+
+flutter_launcher_icons:
+  image_path: "assets/icons/app_icon.png"
+  android: false
+  ios: true
